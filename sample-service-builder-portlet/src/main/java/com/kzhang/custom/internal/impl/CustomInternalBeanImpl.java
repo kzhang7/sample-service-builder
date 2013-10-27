@@ -6,6 +6,6 @@ public class CustomInternalBeanImpl implements CustomInternalBean {
 
 	@Override
 	public void internal() {
-		System.out.println("I am SampleInternalBeanImpl!");
+		System.out.println("I am CustomInternalBeanImpl!");
 	}
 }
