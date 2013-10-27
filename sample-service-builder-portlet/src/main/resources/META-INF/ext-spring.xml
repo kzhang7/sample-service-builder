@@ -7,4 +7,6 @@
 	
 	<bean id="com.kzhang.liferay.sample.BarBean" class="com.kzhang.liferay.sample.impl.BarBeanImpl" />
 	<bean id="com.kzhang.liferay.sample.SampleBean" class="com.kzhang.liferay.sample.impl.SampleBeanImpl" />
+	
+	<bean id="custom.bean.name.customInternalBean" class="com.kzhang.custom.internal.impl.CustomInternalBeanImpl" />
 </beans>

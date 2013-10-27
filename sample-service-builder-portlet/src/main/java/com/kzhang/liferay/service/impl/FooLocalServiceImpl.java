@@ -1,5 +1,6 @@
 package com.kzhang.liferay.service.impl;
 
+import com.kzhang.custom.internal.CustomInternalBean;
 import com.kzhang.liferay.sample.BarBean;
 import com.kzhang.liferay.sample.SampleBean;
 import com.kzhang.liferay.service.base.FooLocalServiceBaseImpl;
@@ -32,6 +33,9 @@ public class FooLocalServiceImpl extends FooLocalServiceBaseImpl {
 		
 		System.out.println("Example 2 using annotation:");
 		barBean.bar();
+		
+		System.out.println("Example 3 using custom bean name on a internal API");
+		customInternalBean.internal();
 	}
 
 	public SampleBean getSampleBean() {
@@ -46,4 +50,7 @@ public class FooLocalServiceImpl extends FooLocalServiceBaseImpl {
 	
 	@BeanReference(type = BarBean.class)
 	private BarBean barBean;
+	
+	@BeanReference(name = "custom.bean.name.customInternalBean")
+	private CustomInternalBean customInternalBean;
 }
